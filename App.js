@@ -1,6 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import { useState } from 'react';
+import { TodoCard } from 'TodoCard.js'
 
 export default function App() {
   const [todos, setTodos] = useState([
@@ -21,20 +22,4 @@ export default function App() {
   );
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  todoCard: {
-    flex: 1
-  },
-  title: {
 
-  },
-  content: {
-
-  }
-});
