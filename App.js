@@ -10,10 +10,7 @@ export default function App() {
   ]);
 
   const showTodos = () => todos.map(todo => {
-    return <View style={styles.todoCard}>
-      <Text style={styles.title}>{todo.title}</Text>
-      <Text style={styles.content}>{todo.content}</Text>
-    </View>
+    return 
   })
 
   return (
