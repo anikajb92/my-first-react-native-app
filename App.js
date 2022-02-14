@@ -10,7 +10,7 @@ export default function App() {
   ]);
 
   const showTodos = () => todos.map(todo => {
-    <View style={styles.card}>
+    return <View style={styles.todoCard}>
       <Text style={styles.title}>{todo.title}</Text>
       <Text style={styles.content}>{todo.content}</Text>
     </View>
@@ -31,8 +31,8 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
-  card: {
-
+  todoCard: {
+    flex: 1
   },
   title: {
 
