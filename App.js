@@ -18,8 +18,8 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>Hello world</Text>
-      <StatusBar style="auto" />
+      {showTodos()}
+      {/* <StatusBar style="auto" /> */}
     </View>
   );
 }
@@ -31,4 +31,13 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  card: {
+
+  },
+  title: {
+
+  },
+  content: {
+
+  }
 });
