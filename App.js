@@ -7,7 +7,14 @@ export default function App() {
     {title: "First Todo", content: "This is my first task"},
     {title: "Second Todo", content: "This is my second task"},
     {title: "Third Todo", content: "This is my third task"}
-  ])
+  ]);
+
+  const showTodos = () => todos.map(todo => {
+    <View>
+      <Text>{todo.title}</Text>
+      <Text>{todo.content}</Text>
+    </View>
+  })
 
   return (
     <View style={styles.container}>
