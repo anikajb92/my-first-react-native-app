@@ -4,7 +4,9 @@ import { useState } from 'react';
 
 export default function App() {
   const [todos, setTodos] = useState([
-    {title: "First Todo", content: "This is my first to do"}
+    {title: "First Todo", content: "This is my first task"},
+    {title: "Second Todo", content: "This is my second task"},
+    {title: "Third Todo", content: "This is my third task"}
   ])
 
   return (
