@@ -1,5 +1,5 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View, SafeAreaView } from 'react-native';
 import { useState } from 'react';
 
 export default function App() {
@@ -17,10 +17,10 @@ export default function App() {
   })
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       {showTodos()}
       {/* <StatusBar style="auto" /> */}
-    </View>
+    </SafeAreaView>
   );
 }
 
